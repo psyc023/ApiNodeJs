@@ -1,7 +1,7 @@
 const { Pool } = require('pg');
 
 const pool = new Pool({
-  user: 'tu_usuario',
+  user: 'postgres',
   host: 'localhost',
   database: 'NodeTSApi',
   password: 'thelizard23',
@@ -9,14 +9,3 @@ const pool = new Pool({
 });
 
 module.exports = pool;
-
-
-import { Sequelize } from 'sequelize';
-
-const sequelize = new Sequelize('NodeTSApi', 'postgres', 'thelizard23', {
-  host: 'localhost',
-  dialect: 'postgres',
-  logging: false
-});
-
-export default sequelize;

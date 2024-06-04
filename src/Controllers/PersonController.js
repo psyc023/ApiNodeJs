@@ -1,4 +1,4 @@
-const Person = require('./PersonModel');
+const Person = require('./Models/PersonModel');
 
 exports.getAllPersons = async (req, res) => {
   try {
